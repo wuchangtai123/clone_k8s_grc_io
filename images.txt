@@ -1,3 +1,1 @@
-nginx:latest
-langgenius/dify-api:0.6.8
-langgenius/dify-web:0.6.8
+portainer/portainer-ce:2.19.5-alpine
