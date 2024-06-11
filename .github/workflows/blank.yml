@@ -29,6 +29,13 @@ jobs:
       - name: Log in to aliyun
         run: |
           docker login --username=${{ secrets.DOCKER_USERNAME }} --password=${{ secrets.DOCKER_PASSWORD }} registry.cn-hangzhou.aliyuncs.com
-      - name: Run process-images
-        run: bash -x docker_retag_and_push.sh
+      
+      - name: pull and push
+        run: |
+          docker pull --platform=linux/arm64 portainer/portainer-ce:2.19.5-alpine
+          docker tag portainer/portainer-ce:2.19.5-alpine registry.cn-hangzhou.aliyuncs.com/wct_registry/portainer-ce:2.19.5-alpine
+          docker push registry.cn-hangzhou.aliyuncs.com/wct_registry/portainer-ce:2.19.5-alpine
+      
+      #- name: Run process-images
+      #  run: bash -x docker_retag_and_push.sh
 
