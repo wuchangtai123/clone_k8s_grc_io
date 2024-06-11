@@ -12,12 +12,21 @@ while read -r image; do
         new_image="registry.cn-hangzhou.aliyuncs.com/wct_registry/$image"
     fi
 
-    # 拉取镜像
-    docker pull "$image"
+    # 拉取镜像,重新标记镜像,推送
+    docker pull --platform=linux/arm64 "$image"
+    docker tag "$image" "$new_image-arm64"
+    docker push "$new_image-arm64"
 
-    # 重新标记镜像
-    docker tag "$image" "$new_image"
+    # 拉取镜像,重新标记镜像,推送
+    docker pull --platform=linux/amd64 "$image"
+    docker tag "$image" "$new_image-amd64"
+    docker push "$new_image-amd64"
 
-    # 推送镜像
-    docker push "$new_image"
+    #创建manifest
+    docker manifest create ${new_image} \
+                             ${new_image}-amd64 \
+                             ${new_image}-arm64 --amend
+
+    docker manifest push ${new_image}
+    
 done < images.txt
