@@ -32,9 +32,9 @@ jobs:
       
       - name: pull and push
         run: |
-          docker pull --platform=linux/arm64 portainer/base:latest
-          docker tag portainer/base:latest registry.cn-hangzhou.aliyuncs.com/wct_registry/portainer-base:latest
-          docker push registry.cn-hangzhou.aliyuncs.com/wct_registry/portainer-base:latest
+          docker pull --platform=linux/amd64 kubeedge/sedna-example-joint-inference-helmet-detection-little:v0.5.0
+          docker tag kubeedge/sedna-example-joint-inference-helmet-detection-little:v0.5.0 registry.cn-hangzhou.aliyuncs.com/wct_registry/sedna-example-joint-inference-helmet-detection-little:v0.5.0
+          docker push registry.cn-hangzhou.aliyuncs.com/wct_registry/sedna-example-joint-inference-helmet-detection-little:v0.5.0
       
       #- name: Run process-images
       #  run: bash -x docker_retag_and_push.sh
