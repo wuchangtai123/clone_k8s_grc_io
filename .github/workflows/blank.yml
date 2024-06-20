@@ -30,12 +30,12 @@ jobs:
         run: |
           docker login --username=${{ secrets.DOCKER_USERNAME }} --password=${{ secrets.DOCKER_PASSWORD }} registry.cn-hangzhou.aliyuncs.com
       
-      - name: pull and push
-        run: |
-          docker pull --platform=linux/amd64 kubeedge/sedna-example-joint-inference-helmet-detection-big:v0.3.0
-          docker tag kubeedge/sedna-example-joint-inference-helmet-detection-big:v0.3.0 registry.cn-hangzhou.aliyuncs.com/wct_registry/sedna-example-joint-inference-helmet-detection-big:v0.3.0
-          docker push registry.cn-hangzhou.aliyuncs.com/wct_registry/sedna-example-joint-inference-helmet-detection-big:v0.3.0
+      # - name: pull and push
+      #   run: |
+      #     docker pull --platform=linux/amd64 kubeedge/sedna-example-joint-inference-helmet-detection-big:v0.3.0
+      #     docker tag kubeedge/sedna-example-joint-inference-helmet-detection-big:v0.3.0 registry.cn-hangzhou.aliyuncs.com/wct_registry/sedna-example-joint-inference-helmet-detection-big:v0.3.0
+      #     docker push registry.cn-hangzhou.aliyuncs.com/wct_registry/sedna-example-joint-inference-helmet-detection-big:v0.3.0
       
-      #- name: Run process-images
-      #  run: bash -x docker_retag_and_push.sh
+      - name: Run process-images
+        run: bash -x docker_retag_and_push.sh
 
