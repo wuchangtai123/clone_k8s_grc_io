@@ -1,1 +1,1 @@
-kubesphere/kiali-operator:v1.59.1
+kubesphere/kiali-operator:v1.28.1
