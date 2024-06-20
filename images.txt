@@ -1,1 +1,5 @@
-kubesphere/kiali-operator:v1.50.1
+istio/examples-bookinfo-productpage-v1:1.20.0
+istio/examples-bookinfo-reviews-v1:1.20.0
+istio/examples-bookinfo-reviews-v2:1.20.0
+istio/examples-bookinfo-details-v1:1.20.0
+istio/examples-bookinfo-ratings-v1:1.20.0
