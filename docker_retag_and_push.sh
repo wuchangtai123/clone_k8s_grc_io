@@ -3,11 +3,10 @@
 function DockerImages() {
     while read -r image; do
         # 检查是否有 /
-        if [[ $image == *"/*"* ]]; then
+        if [[ $image == */* ]]; then
             # 截取 / 后的值
-            repository=$(basename "$image")
-            tag=$(echo "$image" | cut -d : -f 2)
-            new_image="registry.cn-hangzhou.aliyuncs.com/wct_registry/$repository:$tag"
+            temp=$(basename "$image")
+            new_image="registry.cn-hangzhou.aliyuncs.com/wct_registry/$temp"
         else
             # 如果没有 /，则直接使用原名称作为新的repository
             new_image="registry.cn-hangzhou.aliyuncs.com/wct_registry/$image"
