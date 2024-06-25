@@ -1,1 +1,1 @@
-localai/localai:master-aio-cpu
+python:3.8.15
