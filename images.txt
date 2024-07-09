@@ -1,1 +1,1 @@
-espnet/espnet:cpu-latest
+kubeedge/edgecore:v1.16.2
