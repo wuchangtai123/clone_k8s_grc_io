@@ -1,1 +1,1 @@
-intel/image-recognition:centos-tf-cpu-resnet50v1-5-inference
+intel/object-detection:centos-pytorch-cpu-ssd-resnet34-inference
