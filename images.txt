@@ -1,1 +1,1 @@
-intel/object-detection:centos-pytorch-cpu-ssd-resnet34-inference
+ubuntu:14.04
