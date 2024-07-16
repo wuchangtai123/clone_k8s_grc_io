@@ -1,1 +1,1 @@
-kubeedge/edgecore:v1.16.2
+intel/image-recognition:centos-tf-cpu-resnet50v1-5-inference
