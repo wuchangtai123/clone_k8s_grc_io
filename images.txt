@@ -1,1 +1,2 @@
-ubuntu:14.04
+kubeedge/kubeedge-pi-counter:v1.0.0
+kubeedge/kubeedge-counter-app:v1.0.0
