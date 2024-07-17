@@ -1,2 +1,2 @@
-kubeedge/kubeedge-pi-counter:v1.0.0
-kubeedge/kubeedge-counter-app:v1.0.0
+crazyzym/kubeedge-pi-counter:v1.0.0
+crazyzym/kubeedge-counter-app:v1.0.0
