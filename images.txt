@@ -1,1 +1,1 @@
-alpine:latest
+chainguard/nfs-subdir-external-provisioner:latest
