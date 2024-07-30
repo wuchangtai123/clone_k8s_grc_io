@@ -1,1 +1,1 @@
-chainguard/nfs-subdir-external-provisioner:latest
+elastic/filebeat:6.7.0
