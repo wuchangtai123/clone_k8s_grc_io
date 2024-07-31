@@ -1,1 +1,1 @@
-elastic/filebeat:7.17.11
+nginx:stable-alpine
