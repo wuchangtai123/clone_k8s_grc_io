@@ -1,3 +1,1 @@
-chromadb/chroma:0.5.3
-mysql:8.0
-supersonicbi/supersonic:0.9.6
+ubuntu:24.04
