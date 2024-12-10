@@ -1,1 +1,1 @@
-nginx:1.16.1
+osixia/keepalived:2.0.19
