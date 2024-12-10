@@ -1,1 +1,1 @@
-osixia/keepalived:2.0.19
+osixia/light-baseimage:alpine-0.1.9
