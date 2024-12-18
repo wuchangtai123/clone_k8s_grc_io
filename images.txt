@@ -1,1 +1,1 @@
-alpine:latest
+moby/buildkit:buildx-stable-1
